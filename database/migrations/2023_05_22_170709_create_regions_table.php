@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name', 100)->collation('utf8mb4_unicode_ci');
             $table->unsignedInteger('display_order')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

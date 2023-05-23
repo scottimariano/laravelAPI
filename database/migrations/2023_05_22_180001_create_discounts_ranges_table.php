@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('code', 15)->nullable();
             $table->unsignedBigInteger('discount_id');
             $table->timestamps();
+            $table->softDeletes();
 
             $table->foreign('discount_id')->references('id')->on('discounts');
         });

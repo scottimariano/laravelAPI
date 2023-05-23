@@ -6,15 +6,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Region extends Model
+class Accesstype extends Model
 {
     use SoftDeletes;
-    
-    protected $table = 'regions';
 
-    protected $fillable = [
-        'code',
-        'name',
-        'display_order',
-    ];
+    protected $table = 'access_types';
 }

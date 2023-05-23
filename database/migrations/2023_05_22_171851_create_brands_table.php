@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedInteger('display_order')->nullable();
             $table->tinyInteger('active')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
