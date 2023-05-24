@@ -8,7 +8,7 @@
 
 ## __1- Clonar el reposiotorio__
 
-Debe situarce en la carpeta donde desea clonar el repositorio.
+Debe situarse en la carpeta donde desea clonar el repositorio.
 Luego ejecutar el siguiente comando desde la terminal:
 
 ```
@@ -27,7 +27,7 @@ Esto instalará todas las dependencias necesesarias para el correcto funcionamie
 En el repositorio, se encuentra un arhivo .env.example de ejemplo, con las configuraciones basicas.
 Con el siguiente comando, creará un archivo .env con esa base, y allí podrá configurar sus opciones segun sea necesario.
 ```
-cp .env.local .env
+cp .env.example .env
 ```
 
 Una vez creado el archivo, con el siguiente comando estaremos generando la Appication Key que utiliza laravel.
