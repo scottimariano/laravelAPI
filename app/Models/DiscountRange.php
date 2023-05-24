@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class DiscountRange extends Model
 {
     use SoftDeletes;
+    use HasFactory;
     
     protected $table = 'discount_ranges';
 

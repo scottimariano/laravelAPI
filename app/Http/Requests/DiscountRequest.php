@@ -7,7 +7,6 @@ use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Validation\Rule;
 use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\Log;
 
 class DiscountRequest extends FormRequest
 {
@@ -96,9 +95,9 @@ class DiscountRequest extends FormRequest
     public function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(response()->json([
-            'success'   => false,
-            'message'   => 'Validation errors',
-            'erros'      => $validator->errors()
+            'success' => false,
+            'message' => 'Validation errors',
+            'erros' => $validator->errors()
         ], 400));
     }
 }

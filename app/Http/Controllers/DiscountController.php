@@ -6,7 +6,6 @@ use App\Models\Discount;
 use App\Models\DiscountRange;
 use Illuminate\Http\Request;
 use App\Http\Requests\DiscountRequest;
-use Illuminate\Support\Facades\Log;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Exception;
@@ -216,6 +215,9 @@ class DiscountController extends Controller
         }
     }
 
+    /**
+     * Downlod a resource list.
+     */
     public function downloadCSV(Request $request)
     {
         $nombre = $request->query('nombre');
@@ -223,7 +225,7 @@ class DiscountController extends Controller
         $region = $request->query('region');
         $awd_bcd = $request->query('AWD/BCD');
 
-        return Excel::download(new DiscountExport($nombre, $rentadora, $region, $awd_bcd), 'discounts.csv');
+        return Excel::download(new DiscountExport($nombre, $rentadora, $region, $awd_bcd), 'descuentos.csv');
     }
 
 }

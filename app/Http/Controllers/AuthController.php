@@ -23,7 +23,7 @@ class AuthController extends Controller
                 $token = $user->createToken("auth_token")->plainTextToken;
 
                 return response()->json([
-                    "message" => "usuario loggeado",
+                    "message" => "user logged in",
                     "access_token" => $token
                 ], 200);
             } else {
@@ -42,7 +42,7 @@ class AuthController extends Controller
     {
         auth()->user()->tokens()->delete();
         return response()->json([
-            "message" => "logout exitoso"
+            "message" => "successful logout"
         ], 200);
     }
 

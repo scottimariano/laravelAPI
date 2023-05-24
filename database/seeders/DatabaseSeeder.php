@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,7 +15,9 @@ class DatabaseSeeder extends Seeder
             UserTableSeeder::class,
             RegionsTableSeeder::class,
             BrandsTableSeeder::class,
-            AccessTypesTableSeeder::class
+            AccessTypesTableSeeder::class,
+            DiscountsTableSeeder::class,
+            DiscountRangesTableSeeder::class
         ]);
     }
 }
