@@ -80,7 +80,7 @@ pass: password
 ```
 
 
-| METODO | RUTA | DESCRIPCIÓN | OBVS
+| METODO | RUTA | DESCRIPCIÓN | OBS
 |---|---|---|---|
 | POST | /login | autenticación del usuario | datos según lo indicado en requerimientos
 | GET | /logout | cierre de sesión del usuario | 
@@ -90,5 +90,5 @@ pass: password
 | PUT | /discount/__id__ | edición de un descuento | los datos deben ser enviado por body
 | DELETE | /discount/__id__ | eliminación de un descuento | se realiza soft delete
 | PUT | /discount/__id__/restore | recuperación de un descuento eliminado | 
-| PUT | /discount/download | descarga de archivo con listado de descuentos | descuentos.csv
+| GET | /discount/download | descarga de archivo con listado de descuentos | descuentos.csv
 
