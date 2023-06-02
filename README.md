@@ -1,4 +1,4 @@
-<H1 align="center">GREEN FLAME | LARAVEL / PHP / MySQL</p>
+<H1 align="center">LARAVEL API/ PHP / MySQL</p>
 
 
 
@@ -12,7 +12,7 @@ Debe situarse en la carpeta donde desea clonar el repositorio.
 Luego ejecutar el siguiente comando desde la terminal:
 
 ```
-git clone https://github.com/scottimariano/greenFlameApp.git
+git clone https://github.com/scottimariano/laravelAPI.git
 ```
 
 ## __2- Installar dependencias__
